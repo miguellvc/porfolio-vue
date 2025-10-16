@@ -43,7 +43,7 @@ const navegacion = ref([
     text-decoration: none;
     color: var(--title-color);
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .logo img {

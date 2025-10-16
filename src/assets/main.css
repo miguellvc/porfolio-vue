@@ -1,15 +1,42 @@
 @import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
+
+body {
+  background: var(--color-background);
+  background-repeat: no-repeat;
+
+}
+
+section {
+  padding: 5rem 9%;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+
+.section_title {
+  text-align: center;
+  font-size: 6vw;
+  color: var(--title-color);
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+  /* section {
+     padding: 8rem 9%;
+  } */
+
+  .section_title {
+    font-size: 9vw;
+  }
+}
+
 
 a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
 }
