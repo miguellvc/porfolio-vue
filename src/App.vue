@@ -10,7 +10,7 @@ import Banner from './components/Banner.vue';
   </header>
   <!-- contenido principal -->
   <main>
-    <Banner/>
+      <Banner/>
   </main>
 </template>
 

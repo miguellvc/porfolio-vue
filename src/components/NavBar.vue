@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from 'vue';
 const navegacion = ref([
-    { id: 1, nombre: 'Inicio', enlace: 'inicio' },
-    { id: 2, nombre: 'Educación', enlace: 'educacion' },
-    { id: 3, nombre: 'Habilidad', enlace: 'habilidad' },
-    { id: 4, nombre: 'Proyectos' }
+    { id: 1, nombre: 'Inicio', enlace: '/#inicio' },
+    { id: 2, nombre: 'Educación', enlace: '/#educacion' },
+    { id: 3, nombre: 'Habilidad', enlace: '/#habilidad' },
+    { id: 4, nombre: 'Proyectos', enlace:'/#proyectos' }
 ])
 </script>
 <template>
