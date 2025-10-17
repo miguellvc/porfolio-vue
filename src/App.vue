@@ -2,6 +2,7 @@
 import NavBar from './components/NavBar.vue';
 import Banner from './components/Banner.vue';
 import Education from './components/education.vue';
+import Skill from './components/Skill.vue';
 </script>
 
 <template>
@@ -19,6 +20,10 @@ import Education from './components/education.vue';
     <!-- componente educación -->
     <div id="educacion">
       <education/>
+    </div>
+    <!-- habilidades -->
+    <div id="habilidades">
+      <Skill/>
     </div>
   </main>
 </template>
