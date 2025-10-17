@@ -1,39 +1,41 @@
 <script setup>
-
+import { ref } from 'vue';
+const education = ref([
+  {
+    title: '2025',
+    detailShort: 'Técnicatura Universitaria en Programación',
+    detail: `En el presente año inicio mis estudios en la TUP, Facultad Regional San Rafael`
+  },
+  {
+    title: '2023',
+    detailShort: 'Argentina Programa',
+    detail: `Realicé los cursos de Argentina Programa, primera y segunda etapa`
+  },
+  {
+    title: '2011',
+    detailShort: 'Técnico Universitario en Informática',
+    detail: `Culminos mis estudios egresandome como TUI, en la UNLaR Sede Villa Unión`
+  }
+]);
 </script>
 
 <template>
-    <section id="education" class="education">
-        <h1 class="section_title">Educación</h1>
+  <section id="education" class="education">
+    <h1 class="section_title">Educación</h1>
 
-        <div class="education__container">
+    <div class="education__container">
 
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">2025</h1>
-                    <p class="card--detail_short">Técnicatura Universitaria en Programación</p>
-                    <p class="card--detail">En el presente año inicio mis estudios en la TUP, Facultad Regional San
-                        Rafael</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">2023</h1>
-                    <p class="card--detail_short">Argentina Programa</p>
-                    <p class="card--detail">Realicé los cursos de Argentina Programa, primera y segunda etapa</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="card-title">2011</h1>
-                    <p class="card--detail_short">Técnico Universitario en Informática</p>
-                    <p class="card--detail">Culminos mis estudios egresandome como TUI, en la UNLaR Sede Villa Unión</p>
-                </div>
-            </div>
-
+      <div v-for="educ in education" class="card">
+        <div class="card-body">
+          <h1 class="card-title">{{ educ.title }}</h1>
+          <p class="card--detail_short">{{ educ.detailShort }}</p>
+          <p class="card--detail">{{ educ.detail }}</p>
         </div>
+      </div>
 
-    </section>
+    </div>
+
+  </section>
 </template>
 
 <style scoped>
@@ -154,5 +156,4 @@
   text-align: center;
 
 }
-
 </style>
