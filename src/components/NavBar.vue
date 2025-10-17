@@ -14,7 +14,7 @@ const navegacion = ref([
             <img src="./src/img/logo.png" alt="logo">
         </div>
         <ul class="navbar">
-            <li v-for="nav in navegacion" :key="nav.nombre"><a href="nav.enlace">{{ nav.nombre }}</a></li>
+            <li v-for="nav in navegacion" :key="nav.nombre"><a :href="nav.enlace">{{ nav.nombre }}</a></li>
         </ul>
     </ul>
 
