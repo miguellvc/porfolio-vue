@@ -21,10 +21,12 @@ import Skill from './components/Skill.vue';
     <div id="educacion">
       <education/>
     </div>
-    <!-- habilidades -->
+    <!-- componente habilidades -->
     <div id="habilidades">
       <Skill/>
     </div>
+    <!-- componente  -->
+
   </main>
 </template>
 
