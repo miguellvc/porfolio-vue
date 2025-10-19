@@ -3,6 +3,7 @@ import NavBar from './components/NavBar.vue';
 import Banner from './components/Banner.vue';
 import Education from './components/education.vue';
 import Skill from './components/Skill.vue';
+import Project from './components/Project.vue';
 </script>
 
 <template>
@@ -26,7 +27,9 @@ import Skill from './components/Skill.vue';
       <Skill/>
     </div>
     <!-- componente  -->
-
+    <div id="proyectos">
+      <Project/>
+    </div>
   </main>
 </template>
 
