@@ -1,9 +1,11 @@
 <script setup>
 import NavBar from './components/NavBar.vue';
 import Banner from './components/Banner.vue';
-import Education from './components/education.vue';
+import Education from './components/Education.vue';
 import Skill from './components/Skill.vue';
 import Project from './components/Project.vue';
+import Footer from './components/Footer.vue';
+
 </script>
 
 <template>
@@ -16,21 +18,22 @@ import Project from './components/Project.vue';
     <!-- componente banner -->
     <div id="inicio">
 
-      <Banner/>
+      <Banner />
     </div>
     <!-- componente educación -->
     <div id="educacion">
-      <education/>
+      <education />
     </div>
     <!-- componente habilidades -->
     <div id="habilidades">
-      <Skill/>
+      <Skill />
     </div>
     <!-- componente  -->
     <div id="proyectos">
-      <Project/>
+      <Project />
     </div>
   </main>
+  <Footer />
 </template>
 
 <style scoped>
@@ -44,7 +47,4 @@ import Project from './components/Project.vue';
   background: var(--color-background);
   opacity: 0.9;
 }
-
-
-
 </style>
