@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from 'vue';
+const logo = new URL('../assets/img/logo.png', import.meta.url).href; 
+
 const navegacion = ref([
     { id: 1, nombre: 'Inicio', enlace: '/#inicio' },
     { id: 2, nombre: 'Educación', enlace: '/#educacion' },
@@ -11,7 +13,7 @@ const navegacion = ref([
 
     <ul class="menu">
         <div class="logo">
-            <img src="./src/img/logo.png" alt="logo">
+            <img :src="logo" alt="logo">
         </div>
         <ul class="navbar">
             <li v-for="nav in navegacion" :key="nav.nombre"><a :href="nav.enlace">{{ nav.nombre }}</a></li>
