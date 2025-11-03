@@ -14,7 +14,7 @@ const education = ref([
   {
     title: '2011',
     detailShort: 'Técnico Universitario en Informática',
-    detail: `Culminos mis estudios egresandome como TUI, en la UNLaR Sede Villa Unión`
+    detail: `Culmino mis estudios egresandome como TUI, en la UNLaR Sede Villa Unión`
   }
 ]);
 </script>
@@ -148,12 +148,11 @@ const education = ref([
 }
 
 .card--detail {
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .card--detail_short {
-  font-size: 13px;
+  font-size: 20px;
   text-align: center;
-
 }
 </style>
